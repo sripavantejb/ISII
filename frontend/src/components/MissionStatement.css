@@ -1,0 +1,67 @@
+.mission-statement-page {
+  background-color: var(--color-pure-white);
+  min-height: 100vh;
+  width: 100%;
+}
+
+.mission-banner-section {
+  width: 100%;
+  padding: 2rem;
+  margin: 0;
+  background-color: var(--color-pure-white);
+}
+
+.mission-banner-image {
+  width: 100%;
+  min-height: 300px;
+  background-image: url('https://res.cloudinary.com/dqataciy5/image/upload/v1766340034/Gemini_Generated_Image_uiosyuuiosyuuios_iky1pj.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mission-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.mission-heading {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-section-title);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading);
+  letter-spacing: var(--letter-spacing-headline);
+  color: #002060;
+  margin: 0 0 2rem 0;
+}
+
+.mission-text {
+  font-family: var(--font-body);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-body);
+  color: var(--color-near-black);
+  margin: 0;
+  max-width: 900px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .mission-banner-section {
+    padding: 1.5rem;
+  }
+
+  .mission-banner-image {
+    min-height: 200px;
+  }
+
+  .mission-content {
+    padding: 3rem 1.5rem;
+  }
+
+  .mission-heading {
+    font-size: 28px;
+  }
+}
+

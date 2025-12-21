@@ -1,0 +1,118 @@
+.hero {
+  flex: 1;
+  background-image: url('https://res.cloudinary.com/dqataciy5/image/upload/v1766335523/earth-seen-from-space_m3i926.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: calc(100vh - 80px);
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    rgba(8, 8, 10, 0.75),
+    rgba(8, 8, 10, 0.3)
+  );
+  z-index: 1;
+}
+
+.hero-container {
+  max-width: 1280px;
+  width: 100%;
+  padding: 3rem 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content {
+  max-width: 800px;
+  position: relative;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hero-title {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-hero-title);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading);
+  letter-spacing: var(--letter-spacing-headline);
+  color: var(--color-pure-white);
+  margin: 0;
+}
+
+.hero-subtitle {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-section-title);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-heading);
+  letter-spacing: var(--letter-spacing-headline);
+  color: var(--color-pure-white);
+  margin: 0;
+}
+
+.hero-description {
+  font-family: var(--font-body);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-body);
+  color: var(--color-soft-light-gray);
+  margin: 0;
+  max-width: 600px;
+}
+
+.hero-cta {
+  font-family: var(--font-body);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-medium);
+  background-color: var(--color-charcoal);
+  color: var(--color-pure-white);
+  padding: 0.875rem 2rem;
+  border: 1px solid var(--color-dark-gray);
+  align-self: flex-start;
+  margin-top: 0.5rem;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.hero-cta:hover {
+  background-color: var(--color-pure-white);
+  color: var(--color-near-black);
+  border-color: var(--color-near-black);
+}
+
+/* Responsive adjustments */
+@media (max-width: 968px) {
+  .hero {
+    min-height: calc(100vh - 70px);
+  }
+
+  .hero-container {
+    padding: 2rem 1.5rem;
+  }
+
+  .hero-title {
+    font-size: 42px;
+  }
+
+  .hero-subtitle {
+    font-size: 28px;
+  }
+
+  .hero-description {
+    font-size: var(--font-size-small);
+  }
+}
+

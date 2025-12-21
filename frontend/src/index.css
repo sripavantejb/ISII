@@ -1,0 +1,98 @@
+/* Design System - Color Palette */
+:root {
+  /* Core Colors */
+  --color-pure-white: #FEFEFE;
+  --color-soft-light-gray: #E6E5E5;
+  --color-medium-gray: #B7B6B2;
+  --color-muted-steel-gray: #848887;
+  --color-dark-gray: #5F5E5A;
+  --color-charcoal: #373838;
+  --color-deep-charcoal: #1C1E22;
+  --color-near-black: #08080A;
+
+  /* Typography */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Typography Sizes */
+  --font-size-hero-title: 56px;
+  --font-size-section-title: 36px;
+  --font-size-card-title: 24px;
+  --font-size-body: 16px;
+  --font-size-small: 14px;
+  --font-size-caption: 12px;
+
+  /* Typography Weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Line Heights */
+  --line-height-heading: 1.15;
+  --line-height-body: 1.6;
+
+  /* Letter Spacing */
+  --letter-spacing-headline: -0.01em;
+  --letter-spacing-uppercase: 0.08em;
+
+  /* Borders */
+  --border-thin: 1px solid var(--color-soft-light-gray);
+  --border-strong: 1px solid var(--color-dark-gray);
+  --border-dark: 1px solid var(--color-charcoal);
+}
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  color: var(--color-near-black);
+  background-color: var(--color-pure-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Typography Base Styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  line-height: var(--line-height-heading);
+  letter-spacing: var(--letter-spacing-headline);
+  color: var(--color-near-black);
+  font-weight: var(--font-weight-semibold);
+}
+
+p {
+  margin-bottom: 1.25em;
+  color: var(--color-near-black);
+}
+
+a {
+  color: var(--color-charcoal);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--color-near-black);
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
