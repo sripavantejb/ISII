@@ -1,9 +1,4 @@
 {
-  "root": "frontend",
-  "build": {
-    "command": "npm run build",
-    "outputDirectory": "dist"
-  },
   "rewrites": [
     {
       "source": "/(.*)",
