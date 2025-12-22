@@ -11,8 +11,8 @@
   --color-near-black: #08080A;
 
   /* Typography */
-  --font-heading: 'Playfair Display', serif;
-  --font-body: 'Inter', sans-serif;
+  --font-heading: 'Calibri Light', 'Calibri', 'Arial', sans-serif;
+  --font-body: 'Heebo', sans-serif;
 
   /* Typography Sizes */
   --font-size-hero-title: 56px;
@@ -43,6 +43,10 @@
 }
 
 /* Reset and Base Styles */
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;

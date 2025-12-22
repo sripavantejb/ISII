@@ -20,9 +20,25 @@
   background-repeat: no-repeat;
 }
 
+.mission-heading-wrapper {
+  width: 100%;
+  margin: 0;
+  padding: 4rem 2rem 0.5rem 2rem;
+}
+
+.mission-main-heading {
+  font-family: var(--font-heading);
+  font-size: 52px;
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading);
+  letter-spacing: var(--letter-spacing-headline);
+  color: #002060;
+  margin: 0 0 2rem 0;
+}
+
 .mission-content {
-  max-width: 1280px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   padding: 4rem 2rem;
 }
 
@@ -54,6 +70,14 @@
 
   .mission-banner-image {
     min-height: 200px;
+  }
+
+  .mission-heading-wrapper {
+    padding: 3rem 1.5rem 1.5rem 1.5rem;
+  }
+
+  .mission-main-heading {
+    font-size: 36px;
   }
 
   .mission-content {

@@ -2,7 +2,7 @@ import './ContentCards.css';
 
 function ContentCards() {
   return (
-    <section className="content-cards-section">
+    <section id="capabilities" className="content-cards-section">
       <div className="content-cards-container">
         <div className="content-card">
           <h3 className="card-title">Pivotal Thinking</h3>

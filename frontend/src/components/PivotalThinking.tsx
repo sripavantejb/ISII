@@ -60,6 +60,10 @@ function PivotalThinking() {
 
   return (
     <section className="pivotal-thinking-page">
+      <div className="pivotal-thinking-heading-wrapper">
+        <h1 className="pivotal-thinking-heading">Capabilities &gt; Pivotal Thinking</h1>
+      </div>
+
       <div className="banner-section">
         <div className="banner-image"></div>
       </div>
