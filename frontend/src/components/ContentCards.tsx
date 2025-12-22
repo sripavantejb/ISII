@@ -55,8 +55,8 @@ function ContentCards() {
               <img src={card.image} alt={card.title} />
             </div>
             <div className={`card-content-wrapper ${card.id === 2 ? 'card-content-compact' : ''}`}>
-              <h3 className="card-title">{card.title}</h3>
-              <p className="card-description">{card.description}</p>
+              <h3 className="content-card-title">{card.title}</h3>
+              <p className="content-card-description">{card.description}</p>
               <button 
                 className={`card-button ${card.id === 1 ? 'card-button-primary' : 'card-button-secondary'}`}
                 onClick={() => handleButtonClick(card.buttonLink)}

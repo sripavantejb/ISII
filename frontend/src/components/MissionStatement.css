@@ -76,12 +76,13 @@
 
 .mission-text {
   font-family: var(--font-body);
-  font-size: var(--font-size-body);
+  font-size: 20px;
   font-weight: var(--font-weight-normal);
-  line-height: var(--line-height-body);
+  line-height: 1.8;
   color: var(--color-near-black);
-  margin: 0;
+  margin: 0 auto;
   max-width: 900px;
+  text-align: left;
 }
 
 /* Responsive adjustments */
@@ -100,6 +101,7 @@
 
   .mission-text {
     max-width: 100%;
+    text-align: left;
   }
 }
 
@@ -117,7 +119,8 @@
   }
 
   .mission-text {
-    font-size: var(--font-size-body);
+    font-size: 18px;
+    text-align: left;
   }
 }
 
@@ -135,8 +138,9 @@
   }
 
   .mission-text {
-    font-size: var(--font-size-small);
-    line-height: 1.6;
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: left;
   }
 }
 

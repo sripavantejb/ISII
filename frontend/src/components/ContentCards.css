@@ -44,7 +44,7 @@
   background-color: var(--color-near-black);
   flex-shrink: 0;
   position: relative;
-  border-radius: 12px;
+  border-radius: 0 0 12px 12px;
   opacity: 1;
 }
 
@@ -54,7 +54,7 @@
   object-fit: cover;
   object-position: center;
   display: block;
-  border-radius: 12px;
+  border-radius: 0 0 12px 12px;
 }
 
 .card-content-wrapper {
@@ -74,21 +74,21 @@
   gap: 0;
 }
 
-.card-content-wrapper.card-content-compact .card-title {
+.card-content-wrapper.card-content-compact .content-card-title {
   margin: 0 0 8px 0;
 }
 
-.card-content-wrapper.card-content-compact .card-description {
+.card-content-wrapper.card-content-compact .content-card-description {
   margin: 0 0 16px 0;
 }
 
 .card-content-wrapper.card-content-compact .card-button {
-  margin-top: 0;
+  margin-top: auto;
 }
 
-.card-title {
+.content-card-title {
   font-family: 'Calibri', 'Calibri Light', 'Arial', sans-serif;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 140%;
   letter-spacing: 0.32px;
@@ -103,7 +103,7 @@
   hyphens: auto;
 }
 
-.card-description {
+.content-card-description {
   font-family: 'Heebo', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -189,7 +189,7 @@
     height: auto;
     min-height: 218px;
     aspect-ratio: 497.33331298828125 / 218;
-    border-radius: 12px;
+    border-radius: 0 0 12px 12px;
   }
 }
 
@@ -212,7 +212,7 @@
     height: auto;
     min-height: 218px;
     aspect-ratio: 497.33331298828125 / 218;
-    border-radius: 12px;
+    border-radius: 0 0 12px 12px;
   }
 }
 
@@ -235,7 +235,7 @@
     height: auto;
     min-height: 218px;
     aspect-ratio: 497.33331298828125 / 218;
-    border-radius: 12px;
+    border-radius: 0 0 12px 12px;
   }
 }
 
@@ -258,7 +258,7 @@
     height: auto;
     min-height: 218px;
     aspect-ratio: 497.33331298828125 / 218;
-    border-radius: 12px;
+    border-radius: 0 0 12px 12px;
   }
 }
 
@@ -281,7 +281,7 @@
     height: auto;
     min-height: 218px;
     aspect-ratio: 497.33331298828125 / 218;
-    border-radius: 12px;
+    border-radius: 0 0 12px 12px;
   }
 
   .card-content-wrapper {
@@ -309,7 +309,7 @@
     height: auto;
     min-height: 218px;
     aspect-ratio: 497.33331298828125 / 218;
-    border-radius: 12px;
+    border-radius: 0 0 12px 12px;
   }
 
   .card-content-wrapper {
@@ -318,11 +318,11 @@
     padding: 0;
   }
 
-  .card-title {
-    font-size: 16px;
+  .content-card-title {
+    font-size: 20px;
   }
 
-  .card-description {
+  .content-card-description {
     font-size: var(--font-size-small);
   }
 

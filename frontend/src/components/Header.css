@@ -85,6 +85,9 @@
 
 .nav-link:hover {
   color: var(--color-near-black);
+  text-decoration: none;
+  border: none;
+  outline: none;
 }
 
 .nav-item-with-dropdown {
@@ -152,11 +155,14 @@
 .dropdown-item:hover {
   background-color: rgba(0, 32, 96, 0.03);
   color: var(--color-near-black);
-  padding-left: 1.5rem;
+  padding-left: 1.25rem;
+  text-decoration: none;
+  border: none;
+  outline: none;
 }
 
 .dropdown-item:hover::before {
-  background-color: #002060;
+  display: none;
 }
 
 .dropdown-item:active {
