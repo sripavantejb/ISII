@@ -3,7 +3,7 @@
   padding: 0;
   display: flex;
   justify-content: center;
-  width: 1700px;
+  width: 100%;
   max-width: 100%;
 }
 
@@ -11,17 +11,19 @@
   width: 100%;
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(3, 545.3333129882812px);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 32px;
   align-items: stretch;
   justify-content: center;
+  max-width: 1700px;
 }
 
 .content-card {
   background-color: #F3F3F3;
   border-radius: 16px;
   padding: 16px;
-  width: 545.3333129882812px;
+  width: 100%;
+  max-width: 545.3333129882812px;
   height: 100%;
   min-height: 340px;
   display: flex;
@@ -30,6 +32,7 @@
   overflow: visible;
   opacity: 1;
   gap: 16px;
+  margin: 0 auto;
 }
 
 .content-card:hover {
@@ -167,98 +170,26 @@
 }
 
 /* Responsive adjustments */
-@media (max-width: 1700px) {
-  .content-cards-section {
-    width: 100%;
-  }
-
-  .content-cards-container {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .content-card {
-    width: 100%;
-    max-width: 545.3333129882812px;
-    height: 100%;
-    min-height: 340px;
-    padding: 16px;
-  }
-
-  .card-image {
-    width: 100%;
-    height: auto;
-    min-height: 218px;
-    aspect-ratio: 497.33331298828125 / 218;
-    border-radius: 0 0 12px 12px;
-  }
-}
-
 @media (max-width: 1400px) {
   .content-cards-container {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 24px;
   }
 
   .content-card {
-    width: 100%;
-    max-width: 545.3333129882812px;
-    height: 100%;
-    min-height: 340px;
-    padding: 16px;
-  }
-
-  .card-image {
-    width: 100%;
-    height: auto;
-    min-height: 218px;
-    aspect-ratio: 497.33331298828125 / 218;
-    border-radius: 0 0 12px 12px;
+    min-height: 320px;
   }
 }
 
-@media (max-width: 1200px) and (min-width: 969px) {
-  .content-cards-container {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1.5rem;
-  }
 
-  .content-card {
-    width: 100%;
-    max-width: 545.3333129882812px;
-    height: 100%;
-    min-height: 340px;
-    padding: 16px;
-  }
 
-  .card-image {
-    width: 100%;
-    height: auto;
-    min-height: 218px;
-    aspect-ratio: 497.33331298828125 / 218;
-    border-radius: 0 0 12px 12px;
-  }
-}
-
-@media (max-width: 968px) and (min-width: 769px) {
+@media (max-width: 968px) {
   .content-cards-container {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 24px;
   }
 
   .content-card {
-    width: 100%;
-    max-width: 545.3333129882812px;
-    height: 100%;
-    min-height: 340px;
-    padding: 16px;
-  }
-
-  .card-image {
-    width: 100%;
-    height: auto;
-    min-height: 218px;
-    aspect-ratio: 497.33331298828125 / 218;
-    border-radius: 0 0 12px 12px;
+    min-height: 320px;
   }
 }
 
@@ -269,25 +200,12 @@
   }
 
   .content-card {
-    width: 100%;
-    max-width: 545.3333129882812px;
-    height: auto;
-    min-height: 340px;
-    padding: 16px;
+    max-width: 100%;
+    min-height: 320px;
   }
 
   .card-image {
-    width: 100%;
-    height: auto;
-    min-height: 218px;
-    aspect-ratio: 497.33331298828125 / 218;
-    border-radius: 0 0 12px 12px;
-  }
-
-  .card-content-wrapper {
-    width: 100%;
-    height: auto;
-    padding: 0;
+    min-height: 200px;
   }
 }
 
@@ -297,25 +215,13 @@
   }
 
   .content-card {
-    width: 100%;
-    max-width: 545.3333129882812px;
-    height: auto;
-    min-height: 320px;
-    padding: 16px;
+    max-width: 100%;
+    min-height: 300px;
+    padding: 12px;
   }
 
   .card-image {
-    width: 100%;
-    height: auto;
-    min-height: 218px;
-    aspect-ratio: 497.33331298828125 / 218;
-    border-radius: 0 0 12px 12px;
-  }
-
-  .card-content-wrapper {
-    width: 100%;
-    height: auto;
-    padding: 0;
+    min-height: 180px;
   }
 
   .content-card-title {
@@ -324,16 +230,18 @@
 
   .content-card-description {
     font-size: var(--font-size-small);
+    line-height: 1.5;
   }
 
   .card-button {
-    padding: 0.625rem 1.25rem;
+    padding: 14px 16px;
     font-size: var(--font-size-small);
+    min-height: 44px;
   }
 
   .card-button-icon {
-    width: 14px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
   }
 }
 
