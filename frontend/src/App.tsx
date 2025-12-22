@@ -5,6 +5,8 @@ import FloatingHomeButton from './components/FloatingHomeButton';
 import Home from './pages/Home';
 import About from './pages/About';
 import Capabilities from './pages/Capabilities';
+import PivotalThinkingPage from './pages/PivotalThinking';
+import OurMission from './pages/OurMission';
 import './App.css';
 
 function App() {
@@ -14,7 +16,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/about/mission" element={<OurMission />} />
         <Route path="/capabilities" element={<Capabilities />} />
+        <Route path="/pivotal-thinking" element={<PivotalThinkingPage />} />
       </Routes>
       <Footer />
       <FloatingHomeButton />

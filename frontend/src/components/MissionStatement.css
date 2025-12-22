@@ -6,18 +6,49 @@
 
 .mission-banner-section {
   width: 100%;
-  padding: 2rem;
+  padding: 0;
   margin: 0;
   background-color: var(--color-pure-white);
 }
 
 .mission-banner-image {
   width: 100%;
-  min-height: 300px;
+  max-width: 1920px;
+  height: 256px;
   background-image: url('https://res.cloudinary.com/dqataciy5/image/upload/v1766340034/Gemini_Generated_Image_uiosyuuiosyuuios_iky1pj.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  filter: grayscale(100%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.mission-banner-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(32, 30, 30, 0.7);
+  z-index: 0;
+}
+
+.mission-banner-heading {
+  font-family: var(--font-heading);
+  font-size: 64px;
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading);
+  letter-spacing: var(--letter-spacing-headline);
+  color: #FFFFFF;
+  margin: 0;
+  text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .mission-heading-wrapper {
@@ -40,16 +71,7 @@
   width: 100%;
   margin: 0;
   padding: 4rem 2rem;
-}
-
-.mission-heading {
-  font-family: var(--font-heading);
-  font-size: var(--font-size-section-title);
-  font-weight: var(--font-weight-bold);
-  line-height: var(--line-height-heading);
-  letter-spacing: var(--letter-spacing-headline);
-  color: #002060;
-  margin: 0 0 2rem 0;
+  background-color: var(--color-pure-white);
 }
 
 .mission-text {
@@ -64,20 +86,16 @@
 
 /* Responsive adjustments */
 @media (max-width: 968px) {
-  .mission-heading-wrapper {
-    padding: 3rem 1.5rem 1rem 1.5rem;
+  .mission-banner-image {
+    height: 200px;
   }
 
-  .mission-main-heading {
-    font-size: 42px;
+  .mission-banner-heading {
+    font-size: 52px;
   }
 
   .mission-content {
     padding: 3rem 1.5rem;
-  }
-
-  .mission-heading {
-    font-size: 30px;
   }
 
   .mission-text {
@@ -86,28 +104,16 @@
 }
 
 @media (max-width: 768px) {
-  .mission-banner-section {
-    padding: 1.5rem;
-  }
-
   .mission-banner-image {
-    min-height: 200px;
+    height: 180px;
   }
 
-  .mission-heading-wrapper {
-    padding: 3rem 1.5rem 1rem 1.5rem;
-  }
-
-  .mission-main-heading {
-    font-size: 36px;
+  .mission-banner-heading {
+    font-size: 42px;
   }
 
   .mission-content {
     padding: 3rem 1.5rem;
-  }
-
-  .mission-heading {
-    font-size: 28px;
   }
 
   .mission-text {
@@ -116,30 +122,16 @@
 }
 
 @media (max-width: 480px) {
-  .mission-banner-section {
-    padding: 1rem;
-  }
-
   .mission-banner-image {
-    min-height: 180px;
+    height: 150px;
   }
 
-  .mission-heading-wrapper {
-    padding: 2rem 1rem 1rem 1rem;
-  }
-
-  .mission-main-heading {
-    font-size: 28px;
-    margin-bottom: 1.5rem;
+  .mission-banner-heading {
+    font-size: 32px;
   }
 
   .mission-content {
     padding: 2rem 1rem;
-  }
-
-  .mission-heading {
-    font-size: 24px;
-    margin-bottom: 1.5rem;
   }
 
   .mission-text {

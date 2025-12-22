@@ -1,176 +1,187 @@
 .latest-thinking {
   position: relative;
-  min-height: 500px;
+  height: 270px;
   display: flex;
-  align-items: flex-end;
-  padding: 2rem;
+  align-items: flex-start;
+  padding: 0;
   margin: 0;
-  width: 100%;
+  width: 1700px;
+  max-width: 100%;
   background-color: var(--color-pure-white);
+  border-radius: 16px;
+  overflow: hidden;
 }
 
 .latest-thinking::before {
   content: '';
   position: absolute;
-  top: 2rem;
-  left: 2rem;
-  right: 2rem;
-  bottom: 2rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-image: url('https://res.cloudinary.com/dqataciy5/image/upload/v1766337460/Gemini_Generated_Image_bp2fw9bp2fw9bp2f_txvzzp.png');
   background-size: cover;
-  background-position: center;
+  background-position: right center;
   background-repeat: no-repeat;
   z-index: 0;
 }
 
 .latest-thinking-overlay {
   position: absolute;
-  top: 2rem;
-  left: 2rem;
-  right: 2rem;
-  bottom: 2rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: linear-gradient(
-    rgba(8, 8, 10, 0.75),
-    rgba(8, 8, 10, 0.5)
+    90deg,
+    rgba(4, 4, 4, 0.95) 0%,
+    rgba(4, 4, 4, 0.85) 30%,
+    rgba(8, 8, 9, 0.7) 50%,
+    rgba(8, 8, 10, 0.5) 70%,
+    rgba(8, 8, 10, 0.3) 100%
   );
   z-index: 1;
 }
 
 .latest-thinking-container {
-  max-width: 1280px;
   width: 100%;
-  padding: 3rem 2rem;
+  padding: 0;
   position: relative;
   z-index: 2;
+  height: 100%;
 }
 
 .latest-thinking-content {
-  max-width: 800px;
+  position: absolute;
+  top: 54px;
+  left: 56px;
+  max-width: 1014px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: flex-start;
 }
 
 .latest-thinking-badge {
-  display: inline-block;
-  background-color: var(--color-pure-white);
-  color: #002060;
-  padding: 0.5rem 1.25rem;
-  font-family: var(--font-body);
-  font-size: var(--font-size-small);
-  font-weight: var(--font-weight-medium);
-  letter-spacing: var(--letter-spacing-uppercase);
-  margin-bottom: 1rem;
+  display: block;
+  background-color: transparent;
+  color: #BAB8B8;
+  padding: 0;
+  font-family: 'Heebo', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0.01em;
+  margin: 0;
+  width: 1014px;
+  height: 34px;
+  line-height: 140%;
 }
 
 .latest-thinking-title {
-  font-family: var(--font-heading);
-  font-size: var(--font-size-section-title);
-  font-weight: var(--font-weight-bold);
-  line-height: var(--line-height-heading);
-  letter-spacing: var(--letter-spacing-headline);
-  color: var(--color-pure-white);
+  font-family: 'Calibri', 'Calibri Light', 'Arial', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
   margin: 0;
+  max-width: 1014px;
+  width: 1014px;
+  text-align: left;
 }
 
 /* Responsive adjustments */
+@media (max-width: 1800px) {
+  .latest-thinking {
+    width: 100%;
+    max-width: 1700px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .latest-thinking {
+    width: 100%;
+  }
+}
+
 @media (max-width: 968px) {
   .latest-thinking {
-    min-height: 400px;
-    padding: 1.5rem;
+    height: auto;
+    min-height: 250px;
   }
 
-  .latest-thinking::before {
-    top: 1.5rem;
-    left: 1.5rem;
-    right: 1.5rem;
-    bottom: 1.5rem;
-  }
-
-  .latest-thinking-overlay {
-    top: 1.5rem;
-    left: 1.5rem;
-    right: 1.5rem;
-    bottom: 1.5rem;
-  }
-
-  .latest-thinking-container {
-    padding: 2rem 1.5rem;
+  .latest-thinking-content {
+    top: 40px;
+    left: 40px;
+    max-width: calc(100% - 80px);
+    gap: 16px;
   }
 
   .latest-thinking-title {
-    font-size: 28px;
+    font-size: 12px;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .latest-thinking-badge {
+    font-size: 20px;
+    width: 100%;
+    max-width: 1014px;
+    height: auto;
   }
 }
 
 @media (max-width: 768px) {
   .latest-thinking {
-    min-height: 350px;
-    padding: 1rem;
+    min-height: 200px;
   }
 
-  .latest-thinking::before {
-    top: 1rem;
-    left: 1rem;
-    right: 1rem;
-    bottom: 1rem;
-  }
-
-  .latest-thinking-overlay {
-    top: 1rem;
-    left: 1rem;
-    right: 1rem;
-    bottom: 1rem;
-  }
-
-  .latest-thinking-container {
-    padding: 1.5rem 1rem;
+  .latest-thinking-content {
+    top: 32px;
+    left: 24px;
+    max-width: calc(100% - 48px);
+    gap: 14px;
   }
 
   .latest-thinking-title {
-    font-size: 24px;
+    font-size: 28px;
+    max-width: 100%;
+    width: 100%;
   }
 
   .latest-thinking-badge {
-    font-size: var(--font-size-caption);
-    padding: 0.4rem 1rem;
+    font-size: 18px;
+    width: 100%;
+    max-width: 1014px;
+    height: auto;
   }
 }
 
 @media (max-width: 480px) {
   .latest-thinking {
-    min-height: 300px;
-    padding: 0.75rem;
-  }
-
-  .latest-thinking::before {
-    top: 0.75rem;
-    left: 0.75rem;
-    right: 0.75rem;
-    bottom: 0.75rem;
-  }
-
-  .latest-thinking-overlay {
-    top: 0.75rem;
-    left: 0.75rem;
-    right: 0.75rem;
-    bottom: 0.75rem;
-  }
-
-  .latest-thinking-container {
-    padding: 1.25rem 0.75rem;
+    min-height: 180px;
   }
 
   .latest-thinking-content {
-    max-width: 100%;
+    top: 24px;
+    left: 16px;
+    max-width: calc(100% - 32px);
+    gap: 12px;
   }
 
   .latest-thinking-title {
-    font-size: 20px;
-    line-height: 1.3;
+    font-size: 24px;
+    line-height: 140%;
+    max-width: 100%;
+    width: 100%;
   }
 
   .latest-thinking-badge {
-    font-size: var(--font-size-caption);
-    padding: 0.35rem 0.875rem;
-    margin-bottom: 0.75rem;
+    font-size: 18px;
+    width: 100%;
+    max-width: 1014px;
+    height: auto;
   }
 }
 
