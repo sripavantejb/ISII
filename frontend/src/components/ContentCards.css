@@ -19,18 +19,17 @@
 
 .content-card {
   background-color: #F3F3F3;
-  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 16px;
-  padding: 0;
+  padding: 16px;
   width: 545.3333129882812px;
   height: 100%;
   min-height: 340px;
   display: flex;
   flex-direction: column;
   transition: box-shadow 0.2s ease, transform 0.2s ease;
-  overflow: hidden;
+  overflow: visible;
   opacity: 1;
-  gap: 0;
+  gap: 16px;
 }
 
 .content-card:hover {
@@ -45,7 +44,7 @@
   background-color: var(--color-near-black);
   flex-shrink: 0;
   position: relative;
-  border-radius: 8px 8px 0 0;
+  border-radius: 12px;
   opacity: 1;
 }
 
@@ -55,20 +54,36 @@
   object-fit: cover;
   object-position: center;
   display: block;
-  border-radius: 8px 8px 0 0;
+  border-radius: 12px;
 }
 
 .card-content-wrapper {
-  padding: 24px;
+  padding: 0;
   display: flex;
   flex-direction: column;
   gap: 16px;
   flex: 1;
   position: relative;
-  background-color: #FFFFFF;
+  background-color: transparent;
   align-items: flex-start;
   justify-content: flex-start;
   min-height: 0;
+}
+
+.card-content-wrapper.card-content-compact {
+  gap: 0;
+}
+
+.card-content-wrapper.card-content-compact .card-title {
+  margin: 0 0 8px 0;
+}
+
+.card-content-wrapper.card-content-compact .card-description {
+  margin: 0 0 16px 0;
+}
+
+.card-content-wrapper.card-content-compact .card-button {
+  margin-top: 0;
 }
 
 .card-title {
@@ -77,11 +92,10 @@
   font-weight: 700;
   line-height: 140%;
   letter-spacing: 0.32px;
-  color: #020202;
+  color: #000000;
   margin: 0;
   padding: 0;
   text-align: left;
-  align-self: stretch;
   width: 100%;
   box-sizing: border-box;
   word-wrap: break-word;
@@ -99,7 +113,6 @@
   margin: 0;
   padding: 0;
   text-align: left;
-  align-self: stretch;
   width: 100%;
   box-sizing: border-box;
   word-wrap: break-word;
@@ -123,16 +136,12 @@
   margin-top: auto;
   min-height: 60px;
   width: auto;
-  align-self: flex-start;
+  flex-shrink: 0;
 }
 
 .card-button-primary {
   background-color: #06043D;
   color: #FFFFFF;
-}
-
-.card-button-primary:hover {
-  background-color: #003080;
 }
 
 .card-button-secondary {
@@ -147,8 +156,8 @@
 }
 
 .card-button-icon {
-  width: 16px;
-  height: 16px;
+  width: 10px;
+  height: 10px;
   object-fit: contain;
   flex-shrink: 0;
 }
@@ -172,7 +181,7 @@
     max-width: 545.3333129882812px;
     height: 100%;
     min-height: 340px;
-    padding: 0;
+    padding: 16px;
   }
 
   .card-image {
@@ -180,7 +189,7 @@
     height: auto;
     min-height: 218px;
     aspect-ratio: 497.33331298828125 / 218;
-    border-radius: 8px 8px 0 0;
+    border-radius: 12px;
   }
 }
 
@@ -195,7 +204,7 @@
     max-width: 545.3333129882812px;
     height: 100%;
     min-height: 340px;
-    padding: 0;
+    padding: 16px;
   }
 
   .card-image {
@@ -203,7 +212,7 @@
     height: auto;
     min-height: 218px;
     aspect-ratio: 497.33331298828125 / 218;
-    border-radius: 8px 8px 0 0;
+    border-radius: 12px;
   }
 }
 
@@ -218,7 +227,7 @@
     max-width: 545.3333129882812px;
     height: 100%;
     min-height: 340px;
-    padding: 0;
+    padding: 16px;
   }
 
   .card-image {
@@ -226,7 +235,7 @@
     height: auto;
     min-height: 218px;
     aspect-ratio: 497.33331298828125 / 218;
-    border-radius: 8px 8px 0 0;
+    border-radius: 12px;
   }
 }
 
@@ -241,7 +250,7 @@
     max-width: 545.3333129882812px;
     height: 100%;
     min-height: 340px;
-    padding: 0;
+    padding: 16px;
   }
 
   .card-image {
@@ -249,7 +258,7 @@
     height: auto;
     min-height: 218px;
     aspect-ratio: 497.33331298828125 / 218;
-    border-radius: 8px 8px 0 0;
+    border-radius: 12px;
   }
 }
 
@@ -264,7 +273,7 @@
     max-width: 545.3333129882812px;
     height: auto;
     min-height: 340px;
-    padding: 0;
+    padding: 16px;
   }
 
   .card-image {
@@ -272,13 +281,13 @@
     height: auto;
     min-height: 218px;
     aspect-ratio: 497.33331298828125 / 218;
-    border-radius: 8px 8px 0 0;
+    border-radius: 12px;
   }
 
   .card-content-wrapper {
     width: 100%;
     height: auto;
-    padding: 24px;
+    padding: 0;
   }
 }
 
@@ -292,7 +301,7 @@
     max-width: 545.3333129882812px;
     height: auto;
     min-height: 320px;
-    padding: 0;
+    padding: 16px;
   }
 
   .card-image {
@@ -300,17 +309,13 @@
     height: auto;
     min-height: 218px;
     aspect-ratio: 497.33331298828125 / 218;
-    border-radius: 8px 8px 0 0;
-  }
-
-  .content-card {
-    padding: 16px;
+    border-radius: 12px;
   }
 
   .card-content-wrapper {
     width: 100%;
     height: auto;
-    padding: 1rem;
+    padding: 0;
   }
 
   .card-title {
