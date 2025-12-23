@@ -66,7 +66,7 @@ function Header() {
             onMouseEnter={() => setAboutDropdownOpen(true)}
             onMouseLeave={() => setAboutDropdownOpen(false)}
           >
-            <Link to="/about" className="nav-link" onClick={closeMenu}>About Us</Link>
+            <span className="nav-link nav-link-dropdown">About Us</span>
             <div className={`dropdown-menu ${aboutDropdownOpen ? 'open' : ''}`}>
               <Link to="/about/mission" className="dropdown-item" onClick={closeMenu}>Our Mission</Link>
             </div>
