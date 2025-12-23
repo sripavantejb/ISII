@@ -112,6 +112,7 @@
 @media (max-width: 968px) {
   .hero {
     min-height: calc(100vh - 70px);
+    background-image: url('https://res.cloudinary.com/dqataciy5/image/upload/v1766467988/Main_2_ikdmi8.png');
   }
 
   .hero-container {
