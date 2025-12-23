@@ -27,7 +27,7 @@
 
 .header-logo {
   font-family: var(--font-body);
-  font-size: var(--font-size-body);
+  font-size: 24px;
   font-weight: var(--font-weight-medium);
   color: var(--color-near-black);
   letter-spacing: var(--letter-spacing-uppercase);
@@ -182,7 +182,7 @@
   }
 
   .header-logo {
-    font-size: var(--font-size-small);
+    font-size: 20px;
   }
 
   .mobile-menu-toggle {
@@ -282,7 +282,7 @@
   }
 
   .header-logo {
-    font-size: var(--font-size-small);
+    font-size: 20px;
   }
 
   .header-container {

@@ -140,14 +140,20 @@
   .hero {
     min-height: calc(100vh - 60px);
     background-image: url('https://res.cloudinary.com/dqataciy5/image/upload/v1766467273/Main_1_s55wtz.png');
+    align-items: flex-start;
+    padding-top: 2.5rem;
   }
 
   .hero-container {
-    padding: 2rem 1.5rem;
+    padding: 1.75rem 1.5rem 2rem 1.5rem;
   }
 
   .hero-content {
     max-width: 100%;
+  }
+
+  .hero-text {
+    gap: 1.375rem;
   }
 
   .hero-subtitle {
@@ -167,6 +173,7 @@
     padding: 0.75rem 1.25rem;
     font-size: var(--font-size-small);
     min-height: 44px;
+    margin-top: 0.625rem;
   }
 }
 
@@ -174,10 +181,12 @@
   .hero {
     min-height: calc(100vh - 60px);
     background-image: url('https://res.cloudinary.com/dqataciy5/image/upload/v1766467273/Main_1_s55wtz.png');
+    align-items: flex-start;
+    padding-top: 1.75rem;
   }
 
   .hero-container {
-    padding: 1.5rem 1rem;
+    padding: 1.25rem 1rem 1.5rem 1rem;
   }
 
   .hero-content {
@@ -185,7 +194,7 @@
   }
 
   .hero-text {
-    gap: 1.25rem;
+    gap: 1.125rem;
   }
 
   .hero-subtitle {
@@ -206,6 +215,7 @@
     font-size: var(--font-size-small);
     min-height: 44px;
     text-align: center;
+    margin-top: 0.625rem;
   }
 
   .hero-cta-icon {
