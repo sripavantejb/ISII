@@ -167,6 +167,10 @@
 
 .card-button-secondary .card-button-icon {
   filter: brightness(0);
+  height: 20px;
+  width: 20px;
+  flex-shrink: 0;
+
 }
 
 /* Responsive adjustments */

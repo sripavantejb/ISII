@@ -1,17 +1,17 @@
-.mission-statement-page {
+.about-page {
   background-color: var(--color-pure-white);
   min-height: 100vh;
   width: 100%;
 }
 
-.mission-banner-section {
+.about-banner-section {
   width: 100%;
   padding: 0;
   margin: 0;
   background-color: var(--color-pure-white);
 }
 
-.mission-banner-image {
+.about-banner-image {
   width: 100%;
   max-width: 1920px;
   height: 256px;
@@ -28,7 +28,7 @@
   box-sizing: border-box;
 }
 
-.mission-banner-image::before {
+.about-banner-image::before {
   content: '';
   position: absolute;
   top: 0;
@@ -39,7 +39,7 @@
   z-index: 0;
 }
 
-.mission-banner-heading {
+.about-banner-heading {
   font-family: var(--font-heading);
   font-size: 64px;
   font-weight: var(--font-weight-bold);
@@ -55,23 +55,7 @@
   padding: 0 1rem;
 }
 
-.mission-heading-wrapper {
-  width: 100%;
-  margin: 0;
-  padding: 4rem 2rem 0.5rem 2rem;
-}
-
-.mission-main-heading {
-  font-family: var(--font-heading);
-  font-size: 52px;
-  font-weight: var(--font-weight-bold);
-  line-height: var(--line-height-heading);
-  letter-spacing: var(--letter-spacing-headline);
-  color: #002060;
-  margin: 0 0 2rem 0;
-}
-
-.mission-content {
+.about-content {
   width: 100%;
   margin: 0;
   padding: 4rem 2rem;
@@ -79,7 +63,7 @@
   box-sizing: border-box;
 }
 
-.mission-text {
+.about-text {
   font-family: var(--font-body);
   font-size: 20px;
   font-weight: var(--font-weight-normal);
@@ -93,41 +77,49 @@
   box-sizing: border-box;
 }
 
+.about-text p {
+  margin-bottom: 1.5rem;
+}
+
+.about-text p:last-child {
+  margin-bottom: 0;
+}
+
 /* Responsive adjustments */
 @media (max-width: 1400px) {
-  .mission-banner-image {
+  .about-banner-image {
     height: 240px;
   }
 
-  .mission-banner-heading {
+  .about-banner-heading {
     font-size: 56px;
   }
 
-  .mission-content {
+  .about-content {
     padding: 3.5rem 2rem;
   }
 
-  .mission-text {
+  .about-text {
     font-size: 19px;
   }
 }
 
 @media (max-width: 968px) {
-  .mission-banner-image {
+  .about-banner-image {
     height: 200px;
   }
 
-  .mission-banner-heading {
+  .about-banner-heading {
     font-size: 52px;
     line-height: 1.2;
     padding: 0 1.5rem;
   }
 
-  .mission-content {
+  .about-content {
     padding: 3rem 1.5rem;
   }
 
-  .mission-text {
+  .about-text {
     max-width: 100%;
     font-size: 18px;
     line-height: 1.75;
@@ -136,21 +128,21 @@
 }
 
 @media (max-width: 768px) {
-  .mission-banner-image {
+  .about-banner-image {
     height: 180px;
   }
 
-  .mission-banner-heading {
+  .about-banner-heading {
     font-size: 42px;
     line-height: 1.3;
     padding: 0 1rem;
   }
 
-  .mission-content {
+  .about-content {
     padding: 3rem 1.5rem;
   }
 
-  .mission-text {
+  .about-text {
     font-size: 18px;
     line-height: 1.7;
     text-align: left;
@@ -158,21 +150,21 @@
 }
 
 @media (max-width: 480px) {
-  .mission-banner-image {
+  .about-banner-image {
     height: 150px;
   }
 
-  .mission-banner-heading {
+  .about-banner-heading {
     font-size: 32px;
     line-height: 1.3;
     padding: 0 1rem;
   }
 
-  .mission-content {
+  .about-content {
     padding: 2rem 1rem;
   }
 
-  .mission-text {
+  .about-text {
     font-size: 16px;
     line-height: 1.7;
     text-align: left;

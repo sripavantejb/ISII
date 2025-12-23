@@ -1,7 +1,7 @@
-import MissionStatement from '../components/MissionStatement';
+import AboutComponent from '../components/About';
 
 function About() {
-  return <MissionStatement />;
+  return <AboutComponent />;
 }
 
 export default About;

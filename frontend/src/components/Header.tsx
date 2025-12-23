@@ -46,7 +46,7 @@ function Header() {
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
-        <Link to="/" className="header-logo">ISII Logo</Link>
+        <Link to="/" className="header-logo">ISII</Link>
         <button 
           className="mobile-menu-toggle"
           onClick={toggleMenu}
