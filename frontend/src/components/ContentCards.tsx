@@ -59,7 +59,7 @@ function ContentCards() {
               <p className="content-card-description">{card.description}</p>
               <button 
                 className={`card-button ${card.id === 1 ? 'card-button-primary' : 'card-button-secondary'}`}
-                onClick={() => handleButtonClick(card.buttonLink)}
+                onClick={card.id === 1 ? () => handleButtonClick(card.buttonLink) : undefined}
               >
                 {card.buttonText}
                 <img src={card.id === 1 ? solidIcon : chevronIcon} alt="" className="card-button-icon" />

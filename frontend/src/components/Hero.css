@@ -1,6 +1,6 @@
 .hero {
   flex: 1;
-  background-image: url('https://res.cloudinary.com/dqataciy5/image/upload/v1766335523/earth-seen-from-space_m3i926.jpg');
+  background-image: url('https://res.cloudinary.com/dqataciy5/image/upload/v1766466793/Main_tfkyaj.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -18,11 +18,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 1) 100%
-  );
+  background: transparent;
   z-index: 1;
 }
 
@@ -142,6 +138,7 @@
 @media (max-width: 768px) {
   .hero {
     min-height: calc(100vh - 60px);
+    background-image: url('https://res.cloudinary.com/dqataciy5/image/upload/v1766467273/Main_1_s55wtz.png');
   }
 
   .hero-container {
@@ -175,6 +172,7 @@
 @media (max-width: 480px) {
   .hero {
     min-height: calc(100vh - 60px);
+    background-image: url('https://res.cloudinary.com/dqataciy5/image/upload/v1766467273/Main_1_s55wtz.png');
   }
 
   .hero-container {
