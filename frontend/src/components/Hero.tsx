@@ -1,9 +1,21 @@
 import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 import './Hero.css';
 import chevronIcon from '../assets/chevron-right-double.png';
+import { preloadImages } from '../utils/imagePreloader';
 
 function Hero() {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    // Preload all hero images for different screen sizes
+    const heroImages = [
+      'https://res.cloudinary.com/dqataciy5/image/upload/v1766466793/Main_tfkyaj.png', // Desktop
+      'https://res.cloudinary.com/dqataciy5/image/upload/v1766467988/Main_2_ikdmi8.png', // Tablet
+      'https://res.cloudinary.com/dqataciy5/image/upload/v1766467273/Main_1_s55wtz.png' // Mobile
+    ];
+    preloadImages(heroImages);
+  }, []);
 
   const handleAboutClick = () => {
     navigate('/about/mission');

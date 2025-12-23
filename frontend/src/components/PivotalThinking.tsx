@@ -1,5 +1,7 @@
+import { useEffect } from 'react';
 import './PivotalThinking.css';
 import arrowIcon from '../assets/Icon.png';
+import { preloadImage } from '../utils/imagePreloader';
 
 interface ContentCard {
   id: number;
@@ -55,6 +57,11 @@ const contentCards: ContentCard[] = [
 ];
 
 function PivotalThinking() {
+  useEffect(() => {
+    // Preload PivotalThinking banner image
+    preloadImage('https://res.cloudinary.com/dqataciy5/image/upload/v1766337460/Gemini_Generated_Image_bp2fw9bp2fw9bp2f_txvzzp.png');
+  }, []);
+
   const handleCardClick = (pdfUrl: string) => {
     window.open(pdfUrl, '_blank');
   };

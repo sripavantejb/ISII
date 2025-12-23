@@ -1,6 +1,13 @@
+import { useEffect } from 'react';
 import './About.css';
+import { preloadImage } from '../utils/imagePreloader';
 
 function About() {
+  useEffect(() => {
+    // Preload About banner image
+    preloadImage('https://res.cloudinary.com/dqataciy5/image/upload/v1766340034/Gemini_Generated_Image_uiosyuuiosyuuios_iky1pj.png');
+  }, []);
+
   return (
     <section className="about-page">
       <div className="about-banner-section">

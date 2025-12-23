@@ -1,6 +1,13 @@
+import { useEffect } from 'react';
 import './LatestThinking.css';
+import { preloadImage } from '../utils/imagePreloader';
 
 function LatestThinking() {
+  useEffect(() => {
+    // Preload LatestThinking banner image
+    preloadImage('https://res.cloudinary.com/dqataciy5/image/upload/v1766337460/Gemini_Generated_Image_bp2fw9bp2fw9bp2f_txvzzp.png');
+  }, []);
+
   return (
     <section className="latest-thinking">
       <div className="latest-thinking-overlay"></div>
