@@ -6,7 +6,7 @@ function Hero() {
   const navigate = useNavigate();
 
   const handleAboutClick = () => {
-    navigate('/about');
+    navigate('/about/mission');
   };
 
   return (
